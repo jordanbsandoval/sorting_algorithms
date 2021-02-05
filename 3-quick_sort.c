@@ -32,7 +32,7 @@ int _split(int *arr, int min, int last, size_t size)
 	{
 		if (arr[j] <= piv)
 		{
-			_swap(&arr[i], &arr[j]);
+			swap(&arr[i], &arr[j]);
 
 			if (i != j)
 				print_array(arr, size);
@@ -41,7 +41,7 @@ int _split(int *arr, int min, int last, size_t size)
 		}
 	}
 
-	_swap(&arr[i], &arr[last]);
+	swap(&arr[i], &arr[last]);
 	if (i != j)
 	{
 		print_array(arr, size);
